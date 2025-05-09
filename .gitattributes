@@ -1,6 +1,11 @@
-# Prioritize JavaScript in GitHub language stats
+# Prioritize JavaScript (and React-style JSX)
 *.js linguist-detectable=true
+*.jsx linguist-detectable=true
 
-# Exclude CSS and HTML from language stats but keep them visible in the repo
-*.css linguist-vendored
-*.html linguist-vendored
+# Allow CSS, but ignore dist/vendor files that may skew results
+dist/**/*.css linguist-generated
+vendor/**/*.css linguist-vendored
+
+# Include HTML and JSON (optional but nice for web projects)
+*.html linguist-detectable=true
+*.json linguist-detectable=true
