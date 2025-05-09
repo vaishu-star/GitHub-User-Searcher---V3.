@@ -74,7 +74,7 @@ let userFetch = async () => {
     } catch(err) { // თუ შეცდომა დაფიქსირდა, ამუშავდება მოცემული კოდი. დარესეტდება მოცემული ელემენტები.
         console.log(`Failed: ${err}`);
         userNameSpan.innerHTML = `<span style="color: red; text-decoration: line-through;">User Not Found</span>`;
-        img.src = '/images/github logo.png';
+        img.src = 'github logo.png';
         a.innerHTML = '<a style="color: #e16162;">There is no Link!</a>'
         
     };
