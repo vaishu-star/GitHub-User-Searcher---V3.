@@ -1,11 +1,9 @@
-# Prioritize JavaScript (and React-style JSX)
-*.js linguist-detectable=true
-*.jsx linguist-detectable=true
-
-# Allow CSS, but ignore dist/vendor files that may skew results
+# Ignore big CSS folders so JS shows as main
 dist/**/*.css linguist-generated
 vendor/**/*.css linguist-vendored
 
-# Include HTML and JSON (optional but nice for web projects)
+# Keep your CSS, HTML, and JS in language stats
+*.css linguist-detectable=true
 *.html linguist-detectable=true
-*.json linguist-detectable=true
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
