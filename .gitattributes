@@ -1,9 +1,3 @@
-# Ignore big CSS folders so JS shows as main
-dist/**/*.css linguist-generated
-vendor/**/*.css linguist-vendored
-
-# Keep your CSS, HTML, and JS in language stats
-*.css linguist-detectable=true
-*.html linguist-detectable=true
 *.js linguist-detectable=true
-*.jsx linguist-detectable=true
+*.css linguist-detectable=false
+*.html linguist-detectable=true
