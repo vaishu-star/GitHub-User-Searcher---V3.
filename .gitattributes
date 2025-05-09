@@ -1,3 +1,6 @@
-# *.js linguist-detectable=true
-# *.css linguist-detectable=false
-# *.html linguist-detectable=false
+# Prioritize JavaScript in GitHub language stats
+*.js linguist-detectable=true
+
+# Include CSS and HTML in language stats
+*.css linguist-detectable=true
+*.html linguist-detectable=true
